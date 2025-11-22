@@ -55,10 +55,6 @@ bash scripts/etl_competition_sales_spark_submit.sh
 bash scripts/consumption_recommendation_spark_submit.sh
 ```
 
-Notes:
-- If you run on a Spark cluster, replace `--master local[*]` with your cluster master (e.g., `yarn` or `spark://...`) and adjust memory/executor settings.
-- Many scripts accept a `--config` argument pointing to `configs/ecomm_prod.yml`; edit that file for environment-specific paths.
-
 **Configuration**:
 - Edit `configs/ecomm_prod.yml` to change input/output paths and any pipeline-specific parameters.
 
